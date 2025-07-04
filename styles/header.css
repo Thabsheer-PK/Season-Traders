@@ -136,3 +136,11 @@ nav a:hover::after {
   display: none;
 }
 
+@media (max-width:800px) {
+  .shop-name{
+    font-size: 1.4em;
+  }
+  .shop-logo{
+    width: 70px;
+  }
+}
