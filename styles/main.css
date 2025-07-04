@@ -1,0 +1,62 @@
+.intro-bg {
+  min-height: 100vh;
+  background-image: url('../images/background/intro-bg.jpg');
+  background-size: cover;
+  color: white;
+  background-repeat: no-repeat;
+  font-size: 1.7rem;
+  margin-top: 80px;
+}
+#home,
+#about {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+#about {
+  margin-top: -30px;
+}
+.details {
+  margin-top: 3rem;
+  background: #121212;
+  padding: 1rem;
+  border-radius: 25px;
+}
+.highlight {
+  color: #00d0ff;
+  font-weight: 600;
+}
+.p-highlight {
+  color: #8bc34a;
+  font-weight: 500;
+}
+.p-highlight-affordable {
+  color: #ff9800;
+  font-weight: 500;
+}
+.underline {
+  height: 3px;
+  background-color: #00d0ff;
+  margin-top: 3px;
+  animation: grow 1s ease both;
+  width: 0;
+  transition: width 1s ease;
+}
+@keyframes grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+#contact {
+  margin: 40px 0px 0px 40px;
+}
+
+iframe {
+  width: 50%;
+  height: 300px;
+  border: none;
+  margin-top: 20px;
+}

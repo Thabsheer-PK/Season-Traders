@@ -197,7 +197,7 @@ export const products = [
   },
   {
     id: "029",
-    image: "images/products/ladder.jpg",
+    image: "images/products/ladder.webp",
     name: "Folding Aluminum Ladder",
     price: 1550,
     keywords: ["ladder", "tools", "folding"]
@@ -274,8 +274,8 @@ export const products = [
   },
   {
     id: "040",
-    image: "images/products/cement-bag.jpg",
-    name: "Portland Cement - 50kg Bag",
+    image: "images/products/chettinad-cement-bag.jpg",
+    name: "Chettinad Cement - 50kg Bag",
     price: 390,
     keywords: ["cement", "construction", "materials"]
   }

@@ -1,0 +1,25 @@
+/* .products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+} */
+.hero-products {
+  margin: 40px 0 20px 30px;
+}
+.product-card {
+  padding: 15px;
+  text-align: center;
+  border-right: 1px solid rgb(173, 173, 173);
+  border-bottom: 1px solid rgb(173, 173, 173);
+  border-top: none;
+}
+.product-card img {
+  max-height: 150px;
+  max-width: 250px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.product-name,
+.price-tag {
+  font-weight: bold;
+  font-size: larger;
+}

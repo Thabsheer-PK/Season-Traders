@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+@media (max-width:750px) {
+  .hamber-menu {
+    display: block;
+  }
+  .hideOnMobile {
+    display: none;
+  }
+}
+@media (max-width:376px) {
+  .shop-logo {
+    display: none;
+  }
+  .shop-name {
+    padding-left: 15px;
+  }
+}

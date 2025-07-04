@@ -1,0 +1,136 @@
+header {
+  background-color: #003049;
+  color: white;
+  height: 80px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header-left-section {
+  display: flex;
+  align-items: center;
+}
+.shop-logo {
+  width: 80px;
+  height: 43px;
+  background-color: transparent;
+  margin: 10px 2px 5px 5px;
+  vertical-align: middle;
+  position: relative;
+  animation-name: animateLogo;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  transition: transform 2s;
+}
+.shop-logo:hover {
+  transform: rotate(360deg);
+}
+@keyframes animateLogo {
+  0% {
+    left: 250px;
+    top: 0px;
+    transform: rotate(90deg);
+  }
+  50% {
+    left: 0px;
+    top: 0px;
+    transform: rotate(200deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.shop-name {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  vertical-align: middle;
+  letter-spacing: 1px;
+
+}
+
+
+.S-word {
+  font-weight: bold;
+  position: relative;
+  animation-name: toBig;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  background: lightslategray;
+  background-clip: text;
+  color: transparent; /* Make text itself transparent to show the gradient */
+  display: inline-block;
+}
+@keyframes toBig {
+  0% {
+    font-size: opx;
+  }
+  100% {
+    font-size: 50px;
+  }
+}
+nav {
+  height: 100%;
+  display: flex;
+  margin-right: 50px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+}
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s ease;
+  position: relative;
+}
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: #09b0ff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+nav a:hover {
+  color: #09b0ff
+}
+nav a:hover::after {
+  transform: scaleX(1);
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgb(218, 218, 218);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0;
+}
+.sidebar li {
+  padding: 15px 35px;
+}
+.sidebar a {
+  color: #003049;
+}
+.hamber-menu {
+  display: none;
+}
